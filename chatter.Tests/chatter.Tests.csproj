@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+
+        <IsPackable>false</IsPackable>
+
+        <RootNamespace>chatter.Test</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+        <PackageReference Include="NUnit" Version="3.13.3" />
+        <PackageReference Include="NUnit3TestAdapter" Version="4.0.0" />
+        <PackageReference Include="coverlet.collector" Version="3.1.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ClientClass\ClientClass.csproj" />
+      <ProjectReference Include="..\ClientRunner\ClientRunner.csproj" />
+      <ProjectReference Include="..\CommonNetwork\CommonNetwork.csproj" />
+      <ProjectReference Include="..\ServerClass\ServerClass.csproj" />
+    </ItemGroup>
+
+</Project>
